@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\mat3u\OneDrive\Dokumenty\GitHub\basic-control-system-repo\build\CMakeFiles\7fcf0622201912aae7ec6ad95d4c88bf\Continuous.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\mat3u\OneDrive\Dokumenty\GitHub\basic-control-system-repo\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\mat3u\OneDrive\Dokumenty\GitHub\basic-control-system-repo\build\CMakeFiles\Continuous" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{6853A1C1-BD8C-3455-8528-098CCEC0C147}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

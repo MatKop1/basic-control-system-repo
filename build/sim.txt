@@ -1,0 +1,1 @@
+%Time(s),X-Position (X[2]),Y-Position (X[1]),Input U

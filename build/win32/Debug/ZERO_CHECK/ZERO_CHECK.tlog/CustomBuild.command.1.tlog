@@ -1,0 +1,10 @@
+^C:\USERS\MAT3U\ONEDRIVE\DOKUMENTY\GITHUB\BASIC-CONTROL-SYSTEM-REPO\BUILD\CMAKEFILES\7FCF0622201912AAE7EC6AD95D4C88BF\GENERATE.STAMP.RULE
+setlocal
+D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\bin\cmake.exe -SC:/Users/mat3u/OneDrive/Dokumenty/GitHub/basic-control-system-repo -BC:/Users/mat3u/OneDrive/Dokumenty/GitHub/basic-control-system-repo/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/mat3u/OneDrive/Dokumenty/GitHub/basic-control-system-repo/build/ControlSystem.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

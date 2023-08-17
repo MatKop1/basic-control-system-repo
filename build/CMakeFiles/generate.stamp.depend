@@ -1,0 +1,27 @@
+# CMake generation dependency list for this directory.
+C:/Users/mat3u/OneDrive/Dokumenty/GitHub/basic-control-system-repo/CMakeLists.txt
+C:/Users/mat3u/OneDrive/Dokumenty/GitHub/basic-control-system-repo/build/CMakeFiles/3.27.2/CMakeCCompiler.cmake
+C:/Users/mat3u/OneDrive/Dokumenty/GitHub/basic-control-system-repo/build/CMakeFiles/3.27.2/CMakeCXXCompiler.cmake
+C:/Users/mat3u/OneDrive/Dokumenty/GitHub/basic-control-system-repo/build/CMakeFiles/3.27.2/CMakeRCCompiler.cmake
+C:/Users/mat3u/OneDrive/Dokumenty/GitHub/basic-control-system-repo/build/CMakeFiles/3.27.2/CMakeSystem.cmake
+C:/dev/vcpkg/scripts/buildsystems/vcpkg.cmake
+D:/Mateusz/Programy/cmake-3.27.2-windows-x86_64/cmake-3.27.2-windows-x86_64/share/cmake-3.27/Modules/CMakeCInformation.cmake
+D:/Mateusz/Programy/cmake-3.27.2-windows-x86_64/cmake-3.27.2-windows-x86_64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake
+D:/Mateusz/Programy/cmake-3.27.2-windows-x86_64/cmake-3.27.2-windows-x86_64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake
+D:/Mateusz/Programy/cmake-3.27.2-windows-x86_64/cmake-3.27.2-windows-x86_64/share/cmake-3.27/Modules/CMakeDependentOption.cmake
+D:/Mateusz/Programy/cmake-3.27.2-windows-x86_64/cmake-3.27.2-windows-x86_64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake
+D:/Mateusz/Programy/cmake-3.27.2-windows-x86_64/cmake-3.27.2-windows-x86_64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake
+D:/Mateusz/Programy/cmake-3.27.2-windows-x86_64/cmake-3.27.2-windows-x86_64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake
+D:/Mateusz/Programy/cmake-3.27.2-windows-x86_64/cmake-3.27.2-windows-x86_64/share/cmake-3.27/Modules/CMakeRCInformation.cmake
+D:/Mateusz/Programy/cmake-3.27.2-windows-x86_64/cmake-3.27.2-windows-x86_64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake
+D:/Mateusz/Programy/cmake-3.27.2-windows-x86_64/cmake-3.27.2-windows-x86_64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake
+D:/Mateusz/Programy/cmake-3.27.2-windows-x86_64/cmake-3.27.2-windows-x86_64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+D:/Mateusz/Programy/cmake-3.27.2-windows-x86_64/cmake-3.27.2-windows-x86_64/share/cmake-3.27/Modules/Compiler/MSVC-C.cmake
+D:/Mateusz/Programy/cmake-3.27.2-windows-x86_64/cmake-3.27.2-windows-x86_64/share/cmake-3.27/Modules/Compiler/MSVC-CXX.cmake
+D:/Mateusz/Programy/cmake-3.27.2-windows-x86_64/cmake-3.27.2-windows-x86_64/share/cmake-3.27/Modules/Compiler/MSVC.cmake
+D:/Mateusz/Programy/cmake-3.27.2-windows-x86_64/cmake-3.27.2-windows-x86_64/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake
+D:/Mateusz/Programy/cmake-3.27.2-windows-x86_64/cmake-3.27.2-windows-x86_64/share/cmake-3.27/Modules/Platform/Windows-MSVC-C.cmake
+D:/Mateusz/Programy/cmake-3.27.2-windows-x86_64/cmake-3.27.2-windows-x86_64/share/cmake-3.27/Modules/Platform/Windows-MSVC-CXX.cmake
+D:/Mateusz/Programy/cmake-3.27.2-windows-x86_64/cmake-3.27.2-windows-x86_64/share/cmake-3.27/Modules/Platform/Windows-MSVC.cmake
+D:/Mateusz/Programy/cmake-3.27.2-windows-x86_64/cmake-3.27.2-windows-x86_64/share/cmake-3.27/Modules/Platform/Windows.cmake
+D:/Mateusz/Programy/cmake-3.27.2-windows-x86_64/cmake-3.27.2-windows-x86_64/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake

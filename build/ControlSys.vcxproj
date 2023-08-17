@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|win32">
+      <Configuration>Debug</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|win32">
+      <Configuration>Release</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9A9DC775-C291-3C39-9766-1521AD23F7FB}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <VcpkgEnabled>false</VcpkgEnabled>
+    <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
+    <Platform>win32</Platform>
+    <ProjectName>ControlSys</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="do_not_import_user.props" Condition="exists('do_not_import_user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Users\mat3u\OneDrive\Dokumenty\GitHub\basic-control-system-repo\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">ControlSys.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">ControlSys</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Users\mat3u\OneDrive\Dokumenty\GitHub\basic-control-system-repo\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|win32'">ControlSys.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|win32'">ControlSys</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Users\mat3u\OneDrive\Dokumenty\GitHub\basic-control-system-repo\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">ControlSys.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">ControlSys</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Users\mat3u\OneDrive\Dokumenty\GitHub\basic-control-system-repo\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">ControlSys.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">ControlSys</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">
+    <ClCompile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|win32'">
+    <ClCompile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">
+    <ClCompile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">
+    <ClCompile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\mat3u\OneDrive\Dokumenty\GitHub\basic-control-system-repo\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">Building Custom Rule C:/Users/mat3u/OneDrive/Dokumenty/GitHub/basic-control-system-repo/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">setlocal
+D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\bin\cmake.exe -SC:/Users/mat3u/OneDrive/Dokumenty/GitHub/basic-control-system-repo -BC:/Users/mat3u/OneDrive/Dokumenty/GitHub/basic-control-system-repo/build --check-stamp-file C:/Users/mat3u/OneDrive/Dokumenty/GitHub/basic-control-system-repo/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Users\mat3u\OneDrive\Dokumenty\GitHub\basic-control-system-repo\build\CMakeFiles\3.27.2\CMakeCCompiler.cmake;C:\Users\mat3u\OneDrive\Dokumenty\GitHub\basic-control-system-repo\build\CMakeFiles\3.27.2\CMakeCXXCompiler.cmake;C:\Users\mat3u\OneDrive\Dokumenty\GitHub\basic-control-system-repo\build\CMakeFiles\3.27.2\CMakeRCCompiler.cmake;C:\Users\mat3u\OneDrive\Dokumenty\GitHub\basic-control-system-repo\build\CMakeFiles\3.27.2\CMakeSystem.cmake;C:\dev\vcpkg\scripts\buildsystems\vcpkg.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\CMakeCInformation.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\CMakeCXXInformation.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\CMakeCommonLanguageInclude.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\CMakeDependentOption.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\CMakeGenericSystem.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\CMakeInitializeConfigs.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\CMakeLanguageInformation.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\CMakeRCInformation.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\CMakeSystemSpecificInformation.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\CMakeSystemSpecificInitialize.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\Compiler\MSVC-C.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\Compiler\MSVC-CXX.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\Compiler\MSVC.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\Platform\Windows-Initialize.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\Platform\Windows-MSVC-C.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\Platform\Windows-MSVC.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\Platform\Windows.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Users\mat3u\OneDrive\Dokumenty\GitHub\basic-control-system-repo\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|win32'">Building Custom Rule C:/Users/mat3u/OneDrive/Dokumenty/GitHub/basic-control-system-repo/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|win32'">setlocal
+D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\bin\cmake.exe -SC:/Users/mat3u/OneDrive/Dokumenty/GitHub/basic-control-system-repo -BC:/Users/mat3u/OneDrive/Dokumenty/GitHub/basic-control-system-repo/build --check-stamp-file C:/Users/mat3u/OneDrive/Dokumenty/GitHub/basic-control-system-repo/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Users\mat3u\OneDrive\Dokumenty\GitHub\basic-control-system-repo\build\CMakeFiles\3.27.2\CMakeCCompiler.cmake;C:\Users\mat3u\OneDrive\Dokumenty\GitHub\basic-control-system-repo\build\CMakeFiles\3.27.2\CMakeCXXCompiler.cmake;C:\Users\mat3u\OneDrive\Dokumenty\GitHub\basic-control-system-repo\build\CMakeFiles\3.27.2\CMakeRCCompiler.cmake;C:\Users\mat3u\OneDrive\Dokumenty\GitHub\basic-control-system-repo\build\CMakeFiles\3.27.2\CMakeSystem.cmake;C:\dev\vcpkg\scripts\buildsystems\vcpkg.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\CMakeCInformation.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\CMakeCXXInformation.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\CMakeCommonLanguageInclude.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\CMakeDependentOption.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\CMakeGenericSystem.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\CMakeInitializeConfigs.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\CMakeLanguageInformation.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\CMakeRCInformation.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\CMakeSystemSpecificInformation.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\CMakeSystemSpecificInitialize.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\Compiler\MSVC-C.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\Compiler\MSVC-CXX.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\Compiler\MSVC.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\Platform\Windows-Initialize.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\Platform\Windows-MSVC-C.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\Platform\Windows-MSVC.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\Platform\Windows.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Users\mat3u\OneDrive\Dokumenty\GitHub\basic-control-system-repo\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">Building Custom Rule C:/Users/mat3u/OneDrive/Dokumenty/GitHub/basic-control-system-repo/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">setlocal
+D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\bin\cmake.exe -SC:/Users/mat3u/OneDrive/Dokumenty/GitHub/basic-control-system-repo -BC:/Users/mat3u/OneDrive/Dokumenty/GitHub/basic-control-system-repo/build --check-stamp-file C:/Users/mat3u/OneDrive/Dokumenty/GitHub/basic-control-system-repo/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Users\mat3u\OneDrive\Dokumenty\GitHub\basic-control-system-repo\build\CMakeFiles\3.27.2\CMakeCCompiler.cmake;C:\Users\mat3u\OneDrive\Dokumenty\GitHub\basic-control-system-repo\build\CMakeFiles\3.27.2\CMakeCXXCompiler.cmake;C:\Users\mat3u\OneDrive\Dokumenty\GitHub\basic-control-system-repo\build\CMakeFiles\3.27.2\CMakeRCCompiler.cmake;C:\Users\mat3u\OneDrive\Dokumenty\GitHub\basic-control-system-repo\build\CMakeFiles\3.27.2\CMakeSystem.cmake;C:\dev\vcpkg\scripts\buildsystems\vcpkg.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\CMakeCInformation.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\CMakeCXXInformation.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\CMakeCommonLanguageInclude.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\CMakeDependentOption.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\CMakeGenericSystem.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\CMakeInitializeConfigs.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\CMakeLanguageInformation.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\CMakeRCInformation.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\CMakeSystemSpecificInformation.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\CMakeSystemSpecificInitialize.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\Compiler\MSVC-C.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\Compiler\MSVC-CXX.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\Compiler\MSVC.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\Platform\Windows-Initialize.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\Platform\Windows-MSVC-C.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\Platform\Windows-MSVC.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\Platform\Windows.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Users\mat3u\OneDrive\Dokumenty\GitHub\basic-control-system-repo\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">Building Custom Rule C:/Users/mat3u/OneDrive/Dokumenty/GitHub/basic-control-system-repo/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">setlocal
+D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\bin\cmake.exe -SC:/Users/mat3u/OneDrive/Dokumenty/GitHub/basic-control-system-repo -BC:/Users/mat3u/OneDrive/Dokumenty/GitHub/basic-control-system-repo/build --check-stamp-file C:/Users/mat3u/OneDrive/Dokumenty/GitHub/basic-control-system-repo/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Users\mat3u\OneDrive\Dokumenty\GitHub\basic-control-system-repo\build\CMakeFiles\3.27.2\CMakeCCompiler.cmake;C:\Users\mat3u\OneDrive\Dokumenty\GitHub\basic-control-system-repo\build\CMakeFiles\3.27.2\CMakeCXXCompiler.cmake;C:\Users\mat3u\OneDrive\Dokumenty\GitHub\basic-control-system-repo\build\CMakeFiles\3.27.2\CMakeRCCompiler.cmake;C:\Users\mat3u\OneDrive\Dokumenty\GitHub\basic-control-system-repo\build\CMakeFiles\3.27.2\CMakeSystem.cmake;C:\dev\vcpkg\scripts\buildsystems\vcpkg.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\CMakeCInformation.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\CMakeCXXInformation.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\CMakeCommonLanguageInclude.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\CMakeDependentOption.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\CMakeGenericSystem.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\CMakeInitializeConfigs.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\CMakeLanguageInformation.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\CMakeRCInformation.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\CMakeSystemSpecificInformation.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\CMakeSystemSpecificInitialize.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\Compiler\MSVC-C.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\Compiler\MSVC-CXX.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\Compiler\MSVC.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\Platform\Windows-Initialize.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\Platform\Windows-MSVC-C.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\Platform\Windows-MSVC.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\Platform\Windows.cmake;D:\Mateusz\Programy\cmake-3.27.2-windows-x86_64\cmake-3.27.2-windows-x86_64\share\cmake-3.27\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Users\mat3u\OneDrive\Dokumenty\GitHub\basic-control-system-repo\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\mat3u\OneDrive\Dokumenty\GitHub\basic-control-system-repo\control-system.hh" />
+    <ClCompile Include="C:\Users\mat3u\OneDrive\Dokumenty\GitHub\basic-control-system-repo\control-system.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\mat3u\OneDrive\Dokumenty\GitHub\basic-control-system-repo\build\ZERO_CHECK.vcxproj">
+      <Project>{3006F37E-5E5C-323B-99FD-AB3AD8716321}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

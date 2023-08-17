@@ -1,0 +1,6 @@
+C:/Users/mat3u/OneDrive/Dokumenty/GitHub/basic-control-system-repo/build/CMakeFiles/ControlSys.dir
+C:/Users/mat3u/OneDrive/Dokumenty/GitHub/basic-control-system-repo/build/CMakeFiles/ControlSystem.dir
+C:/Users/mat3u/OneDrive/Dokumenty/GitHub/basic-control-system-repo/build/CMakeFiles/run.dir
+C:/Users/mat3u/OneDrive/Dokumenty/GitHub/basic-control-system-repo/build/CMakeFiles/PACKAGE.dir
+C:/Users/mat3u/OneDrive/Dokumenty/GitHub/basic-control-system-repo/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/mat3u/OneDrive/Dokumenty/GitHub/basic-control-system-repo/build/CMakeFiles/ZERO_CHECK.dir
