@@ -1,8 +1,11 @@
+#import ctypes
 import tkinter as tk
 from tkinter import ttk
 from matplotlib.figure import Figure
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 
+#mylib = ctypes.CDLL('C:\\Users\\mat3u\\OneDrive\\Dokumenty\\GitHub\\basic-control-system-repo\\build\\Debug\\ControlSys.dll')
+# FUNCTIONS
 def plot_data():
     x = [1, 2, 3, 4, 5]
     y = [2, 4, 6, 8, 10]
@@ -23,6 +26,8 @@ def plot_data():
     canvas = FigureCanvasTkAgg(fig, master=frame)
     canvas.draw()
     canvas.get_tk_widget().pack()
+
+# MAIN
 
 # Create the main window
 root = tk.Tk()

@@ -1,18 +1,14 @@
 {
-	"archive" : 
-	{
-		"commandFragments" : 
-		[
-			{
-				"fragment" : "/machine:X86",
-				"role" : "flags"
-			}
-		]
-	},
 	"artifacts" : 
 	[
 		{
-			"path" : "Debug/ControlSys.lib"
+			"path" : "Release/ControlSys.dll"
+		},
+		{
+			"path" : "Release/ControlSys.lib"
+		},
+		{
+			"path" : "Release/ControlSys.pdb"
 		}
 	],
 	"backtrace" : 2,
@@ -53,7 +49,13 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1"
+					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O2 /Ob2 /DNDEBUG"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"define" : "ControlSys_EXPORTS"
 				}
 			],
 			"language" : "CXX",
@@ -70,8 +72,23 @@
 		}
 	],
 	"id" : "ControlSys::@6890427a1f51a3e7e1df",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "/machine:X86 /INCREMENTAL:NO",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
 	"name" : "ControlSys",
-	"nameOnDisk" : "ControlSys.lib",
+	"nameOnDisk" : "ControlSys.dll",
 	"paths" : 
 	{
 		"build" : ".",
@@ -108,5 +125,5 @@
 			"sourceGroupIndex" : 1
 		}
 	],
-	"type" : "STATIC_LIBRARY"
+	"type" : "SHARED_LIBRARY"
 }

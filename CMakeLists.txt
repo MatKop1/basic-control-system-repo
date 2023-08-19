@@ -4,7 +4,7 @@ project(ControlSystem VERSION 0.1.0 LANGUAGES C CXX)
 # include(CTest)
 #enable_testing()
 add_library(
-    ControlSys
+    ControlSys SHARED
     control-system.hh
     control-system.cpp
 )

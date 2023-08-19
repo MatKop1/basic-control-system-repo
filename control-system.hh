@@ -1,6 +1,7 @@
 #ifndef ConSys
 #define ConSys
 #include <vector>
+
 namespace control
 {
 // TOPIC: Discreate Control System
