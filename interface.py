@@ -2,6 +2,8 @@ import tkinter as tk
 import control
 import numpy as np
 import matplotlib.pyplot as plt 
+from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
+
 
 # Defining model 
 def LinearObj(num, den):
@@ -33,17 +35,28 @@ def stringToList(str):
     return integer_list  
 
 # Defining graph
-def graph(entryNum,entryDen):
+def graph(entryNum,entryDen,ax,canvas):
     num = stringToList(entryNum.get())
     den = stringToList(entryDen.get())
     H = LinearObj(num,den)
-    Plot(H)
+    t,y = control.step_response(H)
+    ax.plot(t,y)
+    canvas.draw()
+    #Plot(H)
 
-# Defining main function
+# defining a custom function
+def quit_tk(window):
+    # 1) destroys all widgets and closes the main loop
+    window.destroy()
+    # 2) ends the execution of the Python program
+    exit()
+
+# Defining main function (GUI)
 def main():
+    # Initialize Tkinter
     window = tk.Tk()
     window.title("Control system interface")
-    window.geometry("400x200")
+    window.geometry("1920x1020")
 
     labelNum = tk.Label(text="Numerator")
     labelNum.pack()
@@ -57,11 +70,18 @@ def main():
     entryDen = tk.Entry()
     entryDen.pack() 
 
-    buttonGen = tk.Button(window, text="Step", command=lambda:graph(entryNum,entryDen))
+    # Embedding plot
+    fig,ax = plt.subplots()
+    canvas = FigureCanvasTkAgg(fig,master = window)
+    canvas.get_tk_widget().pack()
+    buttonGen = tk.Button(window, text="Step", command=lambda:graph(entryNum,entryDen,ax,canvas))
     buttonGen.pack()
+
+    #  Close tkinter window when the button is clicked
+    buttonExit = tk.Button(window, text="Close Window",command=lambda:quit_tk(window))  
+    buttonExit.pack()
+
     window.mainloop()
-
-
 
 # Main loop
 if __name__=="__main__":
