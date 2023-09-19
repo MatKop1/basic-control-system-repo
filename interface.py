@@ -1,4 +1,5 @@
 import tkinter as tk
+from tkinter import messagebox
 import control
 import numpy as np
 import matplotlib.pyplot as plt 
@@ -36,6 +37,8 @@ def stringToList(str):
 
 # Defining graph
 def graph(entryNum,entryDen,ax,canvas):
+    ax.clear() 
+    ax.grid()
     num = stringToList(entryNum.get())
     den = stringToList(entryDen.get())
     H = LinearObj(num,den)
@@ -44,45 +47,59 @@ def graph(entryNum,entryDen,ax,canvas):
     canvas.draw()
     #Plot(H)
 
-# defining a custom function
-def quit_tk(window):
-    # 1) destroys all widgets and closes the main loop
-    window.destroy()
-    # 2) ends the execution of the Python program
-    exit()
-
 # Defining main function (GUI)
 def main():
     # Initialize Tkinter
     window = tk.Tk()
     window.title("Control system interface")
-    window.geometry("1920x1020")
+    window.geometry("800x800")
+    frame = tk.Frame(window)
+    frame.pack()
+    bottomframe = tk.Frame(window)
+    bottomframe.pack( )
+    bottomframeGraph = tk.Frame(window)
+    bottomframeGraph.pack()
+    bottomframeButtons = tk.Frame(window)
+    bottomframeButtons.pack()
+    ipadding = {'ipadx': 10, 'ipady': 10, 'padx': 10}
 
-    labelNum = tk.Label(text="Numerator")
-    labelNum.pack()
 
-    entryNum = tk.Entry()
-    entryNum.pack()
- 
-    labelDen = tk.Label(text="Denumerator")
-    labelDen.pack()
 
-    entryDen = tk.Entry()
-    entryDen.pack() 
+    labelNum = tk.Label(frame, text="Numerator:",font=('Arial 24'))
+    labelNum.pack(ipadding,side = tk.LEFT,padx = 10)
+
+    entryNum = tk.Entry(frame, font=('Arial 24'))
+    entryNum.pack(side = tk.LEFT)
+
+    labelDen = tk.Label(bottomframe, text="Denumerator:", font=('Arial 24'))
+    labelDen.pack(ipadding,side = tk.LEFT,padx = 10)
+
+    entryDen = tk.Entry(bottomframe, font=('Arial 24'))
+    entryDen.pack(side = tk.LEFT) 
 
     # Embedding plot
     fig,ax = plt.subplots()
-    canvas = FigureCanvasTkAgg(fig,master = window)
-    canvas.get_tk_widget().pack()
-    buttonGen = tk.Button(window, text="Step", command=lambda:graph(entryNum,entryDen,ax,canvas))
-    buttonGen.pack()
+    canvas = FigureCanvasTkAgg(fig,master = bottomframeGraph)
+    canvas.get_tk_widget().pack(pady=10)
+    buttonGen = tk.Button(bottomframeButtons, text="Step", command=lambda:graph(entryNum,entryDen,ax,canvas),font=('Arial 24'))
+    buttonGen.pack(**ipadding, expand=True, fill=tk.X, side=tk.LEFT)
+
+    # defining a custom function
+    def quit_tk():
+        # 1) destroys all widgets and closes the main loop
+        window.destroy()
+        # 2) ends the execution of the Python program
+        exit()
 
     #  Close tkinter window when the button is clicked
-    buttonExit = tk.Button(window, text="Close Window",command=lambda:quit_tk(window))  
-    buttonExit.pack()
-
+    buttonExit = tk.Button(bottomframeButtons, text="Close Window",command=lambda:quit_tk(),font=('Arial 24'))  
+    buttonExit.pack(**ipadding, expand=True, fill=tk.X, side=tk.LEFT)
+    
+    window.protocol("WM_DELETE_WINDOW", quit_tk)
     window.mainloop()
+
 
 # Main loop
 if __name__=="__main__":
     main()
+    
